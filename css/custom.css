@@ -120,7 +120,7 @@ a:hover {
 
 
 
-/****** EXAMPLE *****/
+/****** GRID EXAMPLE *****/
 
 /* Center website */
 .main {
@@ -131,12 +131,6 @@ a:hover {
 .row {
     margin: 8px -16px;
 }
-
-/* Add padding BETWEEN each column (if you want) */
-/* .row,
-.row > .column {
-    padding: 8px;
-} */
 
 /* Create three equal columns that floats next to each other */
 .column {
@@ -163,25 +157,57 @@ a:hover {
     display: block;
 }
 
-/* Style the buttons */
-/* .btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
+
+/* QUIZ */
+
+#quiz {
+  padding: 1rem;
+  min-width: 300px;
+}
+
+/* Hide all steps by default: */
+.question {
+  display: none;
+}
+
+#prev-btn {
+  display: none;
+}
+
+.btn-container {
+  overflow: auto;
+}
+
+.steps-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background: #d9e4e8;
+  border: 3px solid #d9e4e8;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.answered {
+  background-color: #4CAF50;
+}
+
+/* Mark the active step: */
+.step.active {
+  height: 17px;
+  width: 17px;
   background-color: white;
-  cursor: pointer;
-} */
+}
 
-/* Add a grey background color on mouse-over */
-/* .btn:hover {
-  background-color: #ddd;
-} */
 
-/* Add a dark background color to the active button */
-/* .btn.active {
-  background-color: #666;
-   color: white;
-} */
+
 
 
 
