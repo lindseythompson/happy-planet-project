@@ -26,10 +26,14 @@ h2 {
 
 h3 {
   font-size: 6vw;
+  font-weight: 400;
+  color: #41515B;
 }
 
 h4 {
   font-size: 5vw;
+  font-weight: 400;
+  color: #41515B;
 }
 
 p {
@@ -37,14 +41,16 @@ p {
   line-height: 1.75;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 0;
+  color: #2d3742;
+  padding: .5rem 0;
 }
 
 a {
-  color: white;
+  color: #41515B;
 }
 
 a:hover {
-  color: white;
+  color: #6b7e89;
 }
 
 .navbar-brand {
@@ -58,6 +64,9 @@ a:hover {
   height: 55px;
   width: auto;
 }
+
+
+/****************** INTRO PAGE ******************/
 
 .intro-page {
   background-image: url("../img/clouds-bg.jpg");
@@ -108,7 +117,7 @@ a:hover {
   margin-top: 1rem;
 }
 
-/*************** Categories ***************/
+/****************** CATEGORIES ******************/
 
 .categories {
   margin: 2rem 0;
@@ -118,11 +127,8 @@ a:hover {
   margin-top: 1rem;
 }
 
+/****************** GOALS ******************/
 
-
-/****** GRID EXAMPLE *****/
-
-/* Center website */
 .main {
     max-width: 1000px;
     margin: auto;
@@ -132,40 +138,34 @@ a:hover {
     margin: 8px -16px;
 }
 
-/* Create three equal columns that floats next to each other */
 .column {
     float: left;
     width: 50%;
-    display: none; /* Hide columns by default */
+    display: none;
 }
 
-/* Clear floats after rows */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Content */
 .content {
     background-color: white;
     padding: 10px;
 }
 
-/* The "show" class is added to the filtered elements */
 .show {
     display: block;
 }
 
-
-/* QUIZ */
+/****************** QUIZ ******************/
 
 #quiz {
   padding: 1rem;
   min-width: 300px;
 }
 
-/* Hide all steps by default: */
 .question {
   display: none;
 }
@@ -183,7 +183,6 @@ a:hover {
   margin-bottom: 20px;
 }
 
-/* Make circles that indicate the steps of the form: */
 .step {
   height: 15px;
   width: 15px;
@@ -194,22 +193,74 @@ a:hover {
   display: inline-block;
 }
 
-/* Mark the steps that are finished and valid: */
 .step.answered {
-  background-color: #4CAF50;
+  background-color: #6bcda1;
 }
 
-/* Mark the active step: */
 .step.active {
   height: 17px;
   width: 17px;
   background-color: white;
 }
 
+/****************** RESULTS ******************/
 
+.progress {
+  margin: 1rem 0;
+  height: 2rem;
+  border-radius: 1rem;
+}
 
+.progress-bar {
+  text-align: left;
+}
 
+.food-bar {
+  width: 92%;
+  background-color: #ffcc6a;
+}
 
+.travel-bar {
+  width: 76%;
+  background-color: #6bcda1;
+}
+
+.home-bar {
+  width: 48%;
+  background-color: #f78b7d;
+}
+
+.care-bar {
+  width: 25%;
+  background-color: #8aade5;
+}
+
+.stuff-bar {
+  width: 18%;
+  background-color: #83d3eb;
+}
+
+.graph-label {
+  padding: 10px;
+}
+
+.food-label {
+  color: #ffcc6a;
+  font-weight: 700;
+}
+
+.travel-label {
+  color: #6bcda1;
+  font-weight: 700;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  color: black;
+}
+
+a.simple-btn {
+  text-decoration: underline;
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
