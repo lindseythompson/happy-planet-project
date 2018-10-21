@@ -129,8 +129,36 @@ a:hover {
 
 /****************** GOALS ******************/
 
-.active {
-  background-color: blue;
+#food-btn.active {
+  background-color: #ffcc6a;
+}
+
+#travel-btn.active {
+  background-color: #6bcda1;
+}
+
+#home-btn.active {
+  background-color: #f78b7d;
+}
+
+#care-btn.active {
+  background-color: #8aade5;
+}
+
+#stuff-btn.active {
+  background-color: #83d3eb;
+}
+
+#misc-btn.active {
+  background-color: #c4e3e8;
+}
+
+#button-container .btn {
+  padding: .25rem 1rem;
+  margin: .25rem 0;
+  border-radius: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4vw;
 }
 
 .main {

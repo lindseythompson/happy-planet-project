@@ -74,8 +74,6 @@ function setActiveButton(filterName) {
   if (currentElement.className.indexOf("active") == -1) {
     currentElement.className += " active";
   }
-  console.log(currentElement.className);
-
 }
 
 // // Add active class to the current button (highlight it)
