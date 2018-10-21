@@ -33,13 +33,13 @@
     <h2 class="text-center">Goals</h2>
     <p class="text-center">Add some goals to your eco-board!</p>
     <div id="button-container">
-      <button class="btn btn-filter active" onclick="filterSelection('all')">Show all</button>
-      <button class="btn btn-filter" onclick="filterSelection('food')">Food</button>
-      <button class="btn btn-filter" onclick="filterSelection('travel')">Travel</button>
-      <button class="btn btn-filter" onclick="filterSelection('home')">Home</button>
-      <button class="btn btn-filter" onclick="filterSelection('care')">Care</button>
-      <button class="btn btn-filter" onclick="filterSelection('stuff')">Stuff</button>
-      <button class="btn btn-filter" onclick="filterSelection('misc')">Misc</button>
+      <button id="food-btn" class="btn btn-filter" onclick="filterSelection('food')">Food</button>
+      <button id="travel-btn" class="btn btn-filter" onclick="filterSelection('travel')">Travel</button>
+      <button id="home-btn" class="btn btn-filter" onclick="filterSelection('home')">Home</button>
+      <button id="care-btn" class="btn btn-filter" onclick="filterSelection('care')">Care</button>
+      <button id="stuff-btn" class="btn btn-filter" onclick="filterSelection('stuff')">Stuff</button>
+      <button id="misc-btn" class="btn btn-filter" onclick="filterSelection('misc')">Misc</button>
+      <button id="show-all-btn" class="btn btn-filter" onclick="showAllCards()">Show all</button>
     </div>
 
     <!-- Goals Grid -->

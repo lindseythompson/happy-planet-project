@@ -129,6 +129,10 @@ a:hover {
 
 /****************** GOALS ******************/
 
+.active {
+  background-color: blue;
+}
+
 .main {
     max-width: 1000px;
     margin: auto;
@@ -192,8 +196,6 @@ a:hover {
 .misc-card {
   background-color: #c4e3e8;
 }
-
-
 
 .card-title {
   margin-bottom: 0;
