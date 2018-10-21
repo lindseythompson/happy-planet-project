@@ -53,6 +53,22 @@ a:hover {
   color: #6b7e89;
 }
 
+.btn-primary {
+  border: 1px solid white;
+  background-color: #3c8aba;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 25px;
+  padding: .75rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  border: 1px solid #3c8aba;
+  background-color: #3c8aba;
+  color: white;
+}
+
 .navbar-brand {
   padding-top: 1.5rem;
   padding-bottom: 2rem;
@@ -81,26 +97,6 @@ a:hover {
 }
 
 .intro-text {
-  color: white;
-}
-
-.btn-primary {
-  border: 2px solid #3c8aba;
-  background-color: white;
-  color: #3c8aba;
-  font-family: 'Open Sans', sans-serif;
-  border-radius: 25px;
-}
-
-.btn-primary:hover {
-  border: 2px solid #3c8aba;
-  background-color: #3c8aba;
-  color: white;
-}
-
-.btn-primary:active {
-  border: 2px solid #3c8aba;
-  background-color: #3c8aba;
   color: white;
 }
 
@@ -229,6 +225,10 @@ a:hover {
   margin-bottom: 0;
 }
 
+a.card-body {
+  text-decoration: none;
+}
+
 .card-body {
   padding: 1rem;
   padding-bottom: .5rem;
@@ -237,10 +237,17 @@ a:hover {
 .add-goal-btn {
   margin: .5rem;
   margin-bottom: 1rem;
+  padding: .5rem;
   font-size: .875rem;
   background-color: Transparent;
   border: 1px solid #1e4472;
   color: #1e4472;
+}
+
+.add-goal-btn:hover, .add-goal-btn:active {
+  background-color: #1e4472;
+  border: 1px solid #1e4472;
+  color: white;
 }
 
 .social-container {
@@ -346,12 +353,26 @@ a:hover {
   font-weight: 700;
 }
 
-.carousel-control-next, .carousel-control-prev {
-  color: black;
+.card-container {
+  padding: 0 3rem;
+}
+
+.carousel.slide {
+  padding: 1rem 0;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 a.simple-btn {
   text-decoration: underline;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
