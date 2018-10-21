@@ -18,15 +18,13 @@
   <section class="container">
     <!-- Logo -->
     <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">
-            <img src="../img/logo-blue-icon.png" class="d-inline-block align-top logo" alt="Happy Planet Project Logo">
-          </a>
-        </div>
-        <div class="nav navbar-nav navbar-right">
-          <a class="btn btn-primary" href="profile.html">My Eco-Board</a>
-        </div>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">
+          <img src="../img/logo-blue-icon.png" class="d-inline-block align-top logo" alt="Happy Planet Project Logo">
+        </a>
+      </div>
+      <div class="nav navbar-nav navbar-right">
+        <a class="btn btn-primary ko-btn" href="profile.html">My Eco-Board</a>
       </div>
     </nav>
 
@@ -48,10 +46,48 @@
         <!-- FOOD -->
         <div class="column food">
           <div class="card food-card" >
+            <a href="#" class="card-body" data-toggle="modal" data-target="#exampleModalLong">
+              <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
+            </a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
+          </div>
+          <div class="social-container">
+            <p class="social-text">378 added</p>
+            <p class="social-text">52 starred</p>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLongTitle">Incorporate Meatless Mondays into your diet</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p> Let’s focus on vegetables, beans and nuts. This is all about
+                adding choice and flavor to our diets. Take inspiration from
+                China and Malaysia, where much of the food is plant-based. Also,
+                the Mediterranean has much variety; from delicious salads and
+                vegetable-based stews, to tanginess, pasta and rice dishes. The
+                bottom line: plants can be full of flavor too.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column food">
+          <div class="card food-card" >
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -63,7 +99,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -75,7 +111,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -87,19 +123,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
-          </div>
-          <div class="social-container">
-            <p class="social-text">378 added</p>
-            <p class="social-text">52 starred</p>
-          </div>
-        </div>
-        <div class="column food">
-          <div class="card food-card" >
-            <a href="#" class="card-body">
-              <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
-            </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -112,7 +136,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -124,7 +148,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -136,7 +160,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -148,7 +172,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -160,7 +184,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -172,7 +196,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -185,7 +209,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -197,7 +221,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -209,7 +233,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -221,7 +245,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -233,7 +257,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -245,7 +269,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -258,7 +282,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -270,7 +294,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -282,7 +306,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -295,7 +319,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -307,7 +331,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -319,7 +343,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -331,7 +355,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -343,7 +367,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -355,7 +379,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -368,7 +392,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -380,7 +404,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -392,7 +416,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>
@@ -404,7 +428,7 @@
             <a href="#" class="card-body">
               <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
             </a>
-            <a href="#" class="btn btn-primary add-goal-btn">Add to Board</a>
+            <a class="btn btn-primary ko-btn" onclick="changeButtonCardAdd(this)">Add to Board</a>
           </div>
           <div class="social-container">
             <p class="social-text">378 added</p>

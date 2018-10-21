@@ -5,21 +5,16 @@ function filterSelection(filterName) {
   var filterCards = document.getElementsByClassName(filterName);
   var isShowing = false;
 
-  // if one of the elements has a show than it is a show
   if (filterCards[0].className.indexOf("show") > -1) {
     isShowing = true;
   }
 
   if (isShowing) {
-    //remove all show, button gray
-    for (var i = 0; i < filterCards.length; i++) {
+    for (var i = 0; i < filterCards.length; i++)
       removeClass(filterCards[i], "show");
-    }
   } else {
-    //add all show
-    for (var i = 0; i < filterCards.length; i++) {
+    for (var i = 0; i < filterCards.length; i++)
       addClass(filterCards[i], "show");
-    }
   }
   changeButtonColor(filterName);
 }
@@ -55,6 +50,7 @@ function removeClass(element) {
   element.className = elementClasses.join(" ");
 }
 
+// highlight filter buttons
 function changeButtonColor(filterName) {
   var buttonId = filterName + "-btn";
   var currentElement = document.getElementById(buttonId);
@@ -64,10 +60,9 @@ function changeButtonColor(filterName) {
   } else {
     currentElement.className = currentElement.className.replace(" active", "");
   }
-  console.log(currentElement.className);
-
 }
 
+// set all buttons to active
 function setActiveButton(filterName) {
   var buttonId = filterName + "-btn";
   var currentElement = document.getElementById(buttonId);
@@ -76,13 +71,13 @@ function setActiveButton(filterName) {
   }
 }
 
-// // Add active class to the current button (highlight it)
-// var btnContainer = document.getElementById("button-container");
-// var btns = btnContainer.getElementsByClassName("btn");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function() {
-//     var current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//   });
-// }
+// When card add/remove from board change button
+function changeButtonCardAdd(element) {
+  var text = element.innerHTML;
+
+  if (text == "Add to Board") {
+    element.innerHTML = "Added!";
+  } else {
+    element.innerHTML = "Add to Board";
+  }
+}
