@@ -159,6 +159,68 @@ a:hover {
     display: block;
 }
 
+.column {
+  padding: .25rem;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  margin-top: 0;
+}
+
+.food-card {
+  background-color: #ffcc6a;
+}
+
+.travel-card {
+  background-color: #6bcda1;
+}
+
+.home-card {
+  background-color: #f78b7d;
+}
+
+.care-card {
+  background-color: #8aade5;
+}
+
+.stuff-card {
+  background-color: #83d3eb;
+}
+
+.misc-card {
+  background-color: #c4e3e8;
+}
+
+
+
+.card-title {
+  margin-bottom: 0;
+}
+
+.card-body {
+  padding: 1rem;
+  padding-bottom: .5rem;
+}
+
+.add-goal-btn {
+  margin: .5rem;
+  margin-bottom: 1rem;
+  font-size: .875rem;
+  background-color: Transparent;
+  border: 1px solid #1e4472;
+  color: #1e4472;
+}
+
+.social-container {
+  padding: .5rem 1rem;
+}
+
+.social-text {
+  padding: 0;
+}
+
 /****************** QUIZ ******************/
 
 #quiz {
