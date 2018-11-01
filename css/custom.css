@@ -465,11 +465,17 @@ a.simple-btn {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+    .carousel.slide {
+      padding: 1rem 4rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .container {
+      max-width: 768px;
+  }
+
   h1 {
     font-size: 2.5vw;
   }
@@ -497,7 +503,7 @@ a.simple-btn {
   }
 
   p {
-    font-size: 1vw;
+    font-size: 1.25vw;
     line-height: 1.75;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 0;
@@ -511,6 +517,10 @@ a.simple-btn {
 
   .column {
       width: 25%;
+  }
+
+  .carousel.slide {
+    padding: 1rem 6rem;
   }
 }
 
