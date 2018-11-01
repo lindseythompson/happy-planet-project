@@ -15,11 +15,73 @@
 </head>
 
 <body>
-  <h1>Profile</h1>
+
+  <section class="profile">
+    <div class="container">
+      <!-- Logo -->
+      <nav class="nav">
+        <a class="navbar-brand" href="index.html">
+          <img src="../img/logo-blue.png" class="d-inline-block align-top logo" alt="Happy Planet Project Logo">
+        </a>
+      </nav>
+
+      <!-- Heading -->
+      <div class="container text-center">
+        <h2>My Eco-Board</h2>
+      </div>
+
+      <!-- Top Goals -->
+      <div class="container top-goals-container">
+        <h4>My Favorite Goals</h4>
+        <ul id="topGoalsList">
+          <li>
+            <div class="card placeholder" >
+              <a href="#" class="card-body" data-toggle="modal" data-target="#exampleModalLong">
+                <h4 class="card-title">Star your favorite goal cards below to add them to your Top Goals List!</h4>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <div class="card food-card">
+          <a href="#" class="card-body">
+            <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
+          </a>
+          <a class="btn btn-primary ko-btn" onclick="addElement(this)">Add to Favorites</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card food-card">
+          <a href="#" class="card-body">
+            <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
+          </a>
+          <a class="btn btn-primary ko-btn" onclick="addElement(this)">Add to Favorites</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card travel-card" >
+          <a href="#" class="card-body">
+            <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
+          </a>
+          <a class="btn btn-primary ko-btn" onclick="addElement(this)">Add to Favorites</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card misc-card" >
+          <a href="#" class="card-body">
+            <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
+          </a>
+          <a class="btn btn-primary ko-btn" onclick="addElement(this)">Add to Favorites</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-
+  <script src="../js/topList.js"></script>
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

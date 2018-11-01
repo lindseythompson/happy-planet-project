@@ -275,8 +275,20 @@ a.card-body {
   display: none;
 }
 
+#next-btn {
+  color: white;
+  background-color: #1e4472;
+  border: 1px solid #1e4472;
+  border-radius: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
 #prev-btn {
   display: none;
+  border-radius: 30px;
+  border: 1px solid #1e4472;
+
 }
 
 .btn-container {
@@ -380,6 +392,27 @@ a.simple-btn {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
 }
+
+/****************** PROFILE ******************/
+.top-goals-container {
+  background-color: lightgray;
+  padding-bottom: 10px;
+}
+
+#topGoalsList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card.placeholder {
+  /* display: none; */
+}
+
+.profile .container .column {
+  display: grid;
+}
+
+
 
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
