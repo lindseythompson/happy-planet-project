@@ -1,5 +1,6 @@
 //****** Card Sorting ******//
-showAllCards();
+filterSelection('food');
+filterSelection('travel');
 
 function filterSelection(filterName) {
   var filterCards = document.getElementsByClassName(filterName);

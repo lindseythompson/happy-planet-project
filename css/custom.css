@@ -99,7 +99,7 @@ a:hover {
 }
 
 .intro-container {
-  padding: 5rem 0;
+  padding: 9rem 0;
 }
 
 .intro-text {
@@ -109,7 +109,7 @@ a:hover {
 .main-btn {
   font-weight: 600;
   padding: .75rem 1.25rem;
-  margin-top: 7rem;
+  margin-top: 4rem;
   color: #1e4472;
   background-color: white;
   border: none;
@@ -130,6 +130,10 @@ a:hover {
 }
 
 /****************** GOALS ******************/
+
+.btn-filter {
+  background-color: #D9E4E8;
+}
 
 #food-btn.active {
   background-color: #ffcc6a;
@@ -275,6 +279,14 @@ a.card-body {
   display: none;
 }
 
+.form-group {
+    margin-bottom: 5rem;
+}
+
+.form-check {
+  margin-top: 15px;
+}
+
 #next-btn {
   color: white;
   background-color: #1e4472;
@@ -397,6 +409,7 @@ a.simple-btn {
 .top-goals-container {
   background-color: lightgray;
   padding-bottom: 10px;
+  height: auto;
 }
 
 #topGoalsList {
@@ -472,7 +485,7 @@ a.simple-btn {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .container {
+  .results .container {
       max-width: 768px;
   }
 
