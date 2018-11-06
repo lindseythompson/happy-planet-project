@@ -30,54 +30,57 @@
         </div>
       </nav>
 
+      <h2 class="text-center">My Eco-Board</h2>
+      <p class="text-center">Star your favorite goals and get reminders to help you reach them!</p>
+
       <!-- Top Goals -->
       <div class="container top-goals-container">
-        <h4>My Favorite Goals</h4>
-        <ul id="topGoalsList">
-          <li>
-            <div class="card placeholder" >
-              <a href="#" class="card-body" data-toggle="modal" data-target="#exampleModalLong">
-                <h4 class="card-title">Star your favorite goal cards below to add them to your Top Goals List!</h4>
-              </a>
-            </div>
-          </li>
-        </ul>
+        <h4>Get Reminders</h4>
+        <form class="form-inline">
+          <label for="inlineFormInput">Phone Number</label>
+          <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="1 (555) 555-5555">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
 
+      <h4>My Goals</h4>
       <div class="column">
         <div class="card food-card">
           <a href="#" class="card-body">
             <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
           </a>
-          <a class="btn btn-primary ko-btn" onclick="addElement(this)">Add to Favorites</a>
+          <a class="btn btn-primary ko-btn" onclick="starCard(this)">Star this Goal</a>
         </div>
       </div>
       <div class="column">
         <div class="card food-card">
           <a href="#" class="card-body">
-            <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
+            <h4 class="card-title">Avoid buying plastic wrapped products at the grocery store</h4>
           </a>
-          <a class="btn btn-primary ko-btn" onclick="addElement(this)">Add to Favorites</a>
+          <a class="btn btn-primary ko-btn" onclick="starCard(this)">Star this Goal</a>
         </div>
       </div>
       <div class="column">
         <div class="card travel-card" >
           <a href="#" class="card-body">
-            <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
+            <h4 class="card-title">Use public transportation this week to get where you need to go</h4>
           </a>
-          <a class="btn btn-primary ko-btn" onclick="addElement(this)">Add to Favorites</a>
+          <a class="btn btn-primary ko-btn" onclick="starCard(this)">Star this Goal</a>
         </div>
       </div>
       <div class="column">
         <div class="card misc-card" >
           <a href="#" class="card-body">
-            <h4 class="card-title">Incorporate Meatless Mondays into your diet</h4>
+            <h4 class="card-title">Gift people experiences instead of things!</h4>
           </a>
-          <a class="btn btn-primary ko-btn" onclick="addElement(this)">Add to Favorites</a>
+          <a class="btn btn-primary ko-btn" onclick="starCard(this)">Star this Goal</a>
         </div>
       </div>
     </div>
   </section>
+
+  <script src="../js/starCard.js"></script>
+
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
